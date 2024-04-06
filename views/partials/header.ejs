@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    
+</head>
+<body>
+    <header class ="header">
+        <a href="/" class="logo"><span>Jason</span> O'Dell</a>
+        <nav class="navbar">
+            <a href="/" >Home</a>
+            <a href="/about">About Me</a>
+            <a href="/portfolio">Portfolio</a>
+            <a href="/lifestyle">Works Published</a>
+            <a href="/#contact">Contact Me</a>
+        </nav>
+
+        <a href="/images/Resume%204_5_2024.pdf" download="Jason ODell Resume" class="contact" target="blank">Download Resume</a>
+        
+
+
+    </header>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Function to remove 'active' class from all links
+        function removeActiveClass() {
+            document.querySelectorAll('a[href]').forEach(function(link) {
+                link.classList.remove('active');
+            });
+        }
+
+        // Add 'click' event listener to all links
+        document.querySelectorAll('a[href]').forEach(function(item) {
+            item.addEventListener('click', function(event) {
+                // Remove 'active' class from all links
+                removeActiveClass();
+
+                // Store the href value of the clicked link in local storage
+                localStorage.setItem('lastClicked', this.getAttribute('href'));
+
+                // Navigate to the new page
+                window.location.href = this.getAttribute('href');
+            });
+        });
+
+        // Check if there's a lastClicked item in local storage and add 'active' class to it
+        if (localStorage.getItem('lastClicked')) {
+            var lastClickedHref = localStorage.getItem('lastClicked');
+            document.querySelector('a[href="' + lastClickedHref + '"]').classList.add('active');
+        } else {
+            // If no lastClicked item, add 'active' class to the home page link ("/") and store it in local storage
+            document.querySelector('a[href="/"]').classList.add('active');
+            localStorage.setItem('lastClicked', '/');
+        }
+    });
+    var lastClickedValue = localStorage.getItem('lastClicked');
+console.log('Value of lastClicked in local storage:', lastClickedValue);
+
+function setActiveLinkFromStorage() {
+    var lastClickedHref = localStorage.getItem('lastClicked');
+    if (lastClickedHref) {
+        document.querySelectorAll('a[href]').forEach(function(link) {
+            if (link.getAttribute('href') === lastClickedHref) {
+                link.classList.add('active');
+            }
+        });
+    }
+}
+
+setActiveLinkFromStorage();
+</script>
+    
+    
+    
+    

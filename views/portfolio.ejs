@@ -1,0 +1,181 @@
+<%- include('partials/header') %>
+
+<section class="page-Format">
+    <section class="work section" id="work">
+        <h2 data-heading="My Portfolio" class="section_title"></h2>
+        <section id="aMSection">
+            <h1> Recent Works </h1>
+            <hr>
+            <hr id="amhr2">
+        </section>
+
+        <div class="work_filters">
+            <div class="work_item active-work" data-filter="all">All</div>
+            <div class="work_item" data-filter=".web">Web</div>
+            <div class="work_item" data-filter=".app">App</div>
+            <div class="work_item" data-filter=".design">Design</div>
+        </div>
+
+        <div class="work__container container grid">
+            
+
+            <div class="work_card mix web">
+              <img src="https://i.imgur.com/lMw2UkC.jpeg" alt="Image Here(1:30:06)" class="work_img">
+              <h3 class="work_title">Responsive Portfolio Website</h3>
+              <div class="work_button">Demo→
+                  <i class="uil uil-arrow-right work_button-icon"></i>
+              </div>
+              <div class="portfolio_item-details">
+                  <h3 class="details_title">Design for tecnology & services</h3>  
+                  <p class="details_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod impedit delectus laborum?</p>
+                  <ul class="details_info">
+                      <li>Created - 4 dec 2020</li>
+                      <li>Technologies - Express, Html, Css, Javascript, Github </li>
+                      <li>Role - FullStack</li>
+                      <li>View - <a href="#">www.domain.com</a></li>
+                  </ul>
+              </div>
+          </div>
+
+          <div class="work_card mix web">
+            <img src="https://i.imgur.com/LTWHk8M.jpeg" alt="Image Here(1:30:06)" class="work_img">
+            <h3 class="work_title">Travel Agency Website</h3>
+            <div class="work_button">Demo→
+                <i class="uil uil-arrow-right work_button-icon"></i>
+            </div>
+            <div class="portfolio_item-details">
+                <h3 class="details_title">The services I implemented</h3>  
+                <p class="details_description">Explore the beauty and diversity of Africa through our travel agency website, providing easy booking, curated travel packages, and insights into the rich cultures and stunning landscapes of the continent.</p>
+                <ul class="details_info">
+                    <li>Created - 30 June 2024</li>
+                    <li>Technologies - MongoDB, Express, React.js, Node.js, PayPal API, Socket.io, Mongoose, Reduux, Bootstrap, Dialogflow </li>
+
+                    <!-- MongoDB: For the database to store appointment and user information.
+                    Express.js: For building the backend API to handle requests and integrate with PayPal.
+                    React.js: For the frontend user interface where users can book appointments and make payments.
+                    Node.js: As the runtime environment for the backend server.
+                    PayPal API: To integrate PayPal for payment processing.
+                    Socket.io: For implementing the chatbot for customer service.
+                    Additionally, you might use other libraries and frameworks for specific functionalities, such as:
+                    
+                    Mongoose: For MongoDB object modeling in Node.js.
+                    Redux: For state management in the React.js frontend.
+                    Bootstrap or Material-UI: For styling the frontend components.
+                    Twilio or Dialogflow: For integrating a chatbot into your application. -->
+
+                    <li>Role - FullStack</li>
+                    <li>View - <a href="#">www.domain.com</a></li>
+                </ul>
+            </div>
+        </div>
+
+            <div class="work_card mix design">
+                <img src="https://www.oregonexpungementlaw.com/wp-content/uploads/2018/08/coming-soon.jpg" alt="Image Here(1:30:06)" class="work_img">
+                <h3 class="work_title">Brand Design</h3>
+                <div class="work_button">Demo→
+                    <i class="uil uil-arrow-right work_button-icon"></i>
+                </div>
+                <div class="portfolio_item-details">
+                    <h3 class="details_title">Logo Design Creativity & Application</h3>  
+                    <p class="details_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod impedit delectus laborum?</p>
+                    <ul class="details_info">
+                        <li>Created - 4 dec 2020</li>
+                        <li>Technologies -  html css </li>
+                        <li>Role - FullStack</li>
+                        <li>View - <a href="#">www.domain.com</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            
+            <div class="work_card mix app">
+                <img src="https://www.oregonexpungementlaw.com/wp-content/uploads/2018/08/coming-soon.jpg" alt="Image Here(1:30:06)" class="work_img">
+                <h3 class="work_title">App Design</h3>
+                <div class="work_button">Demo→
+                    <i class="uil uil-arrow-right work_button-icon"></i>
+                </div>
+                <div class="portfolio_item-details">
+                    <h3 class="details_title">Mobile app landing design & Services</h3>  
+                    <p class="details_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod impedit delectus laborum?</p>
+                    <ul class="details_info">
+                        <li>Created - 4 dec 2020</li>
+                        <li>Technologies -  html css </li>
+                        <li>Role - FullStack</li>
+                        <li>View - <a href="#">www.domain.com</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            
+
+<div class="portfolio_popup">
+  <div class="portfolio_popup-inner">
+     <div class="portfolio_popup-content grid">
+        <div class="portfolio_popup-close">X<i class="uli uli-times"></i></div>
+        <div class="pp_thumbnail">
+          <img src="https://www.oregonexpungementlaw.com/wp-content/uploads/2018/08/coming-soon.jpg" alt="(1:46:00)" class="portfolio_popup-img">
+        </div>
+        <div class="portfolio_popup-info">
+          <div class="portfolio_popup-subtitle">Featured - <span>Design</span></div>
+          <div class="portfolio_popup-body">
+            
+            <h3 class="details_title">The services provided for design</h3>  
+                    <p class="details_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod impedit delectus laborum?</p>
+                    <ul class="details_info">
+                        <li>Created - 4 dec 2020</li>
+                        <li>Technologies - html css </li>
+                        <li>Role - FullStack</li>
+                        <li>View - <a href="#">www.domain.com</a></li>
+                    </ul>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<script src="/javascripts/mixitup.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        let mixerPortfolio = mixitup('.work__container', {
+            selectors: {
+                target: '.work_card'
+            },
+            animation: {
+                duration: 450
+            }
+        });
+    });
+
+    const linkWork = document.querySelectorAll('.work_item');
+
+function activework() {
+  linkWork.forEach(L => L.classList.remove('active-work'));
+  this.classList.add('active-work');
+}
+
+linkWork.forEach(L => L.addEventListener("click", activework));
+
+document.addEventListener("click", (e) => {
+  if(e.target.classList.contains("work_button")) {
+    togglePortfoloPopup()
+    portfolioItemDetails(e.target.parentElement)
+  }
+})
+
+function togglePortfoloPopup () {
+  document.querySelector(".portfolio_popup").classList.toggle("open");
+}
+
+document.querySelector(".portfolio_popup-close").addEventListener("click", togglePortfoloPopup);
+
+function portfolioItemDetails(portfolioItem) {
+  document.querySelector(".pp_thumbnail img").src = portfolioItem.querySelector(".work_img").src;
+
+  document.querySelector(".portfolio_popup-subtitle span").innerHTML = portfolioItem.querySelector(".work_title").innerHTML;
+
+  document.querySelector(".portfolio_popup-body").innerHTML = portfolioItem.querySelector(".portfolio_item-details").innerHTML;
+  
+}
+
+</script>
